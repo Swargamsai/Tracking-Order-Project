@@ -23,7 +23,7 @@ spec:
         - name: MONGODB_URI
           value: "mongodb://mongodb-service:27017/fitness-tracker"
         - name: PORT
-          value: "5000"
+          value: "3000"
         - name: HOST
           value: "0.0.0.0"
         - name: NODE_ENV
@@ -51,6 +51,6 @@ spec:
   selector:
     app: fitness-tracker-app
   ports:
-  - port: 8010
+  - port: 443
     targetPort: 3000
   type: LoadBalancer
