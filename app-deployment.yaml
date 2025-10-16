@@ -16,12 +16,12 @@ spec:
     spec:
       containers:
       - name: fitness-tracker-app
-        image: swargamsai/tracking-app-doc-img
+        image: swargamsai/tracking-app-doc-img:latest
         ports:
         - containerPort: 3000
         env:
         - name: MONGODB_URI
-          value: "mongodb://mongodb-service:27017/fitness-tracker"
+          value: "mongodb://localhost:27017/parceltracker"
         - name: PORT
           value: "3000"
         - name: HOST
@@ -51,6 +51,6 @@ spec:
   selector:
     app: fitness-tracker-app
   ports:
-  - port: 443
+  - port: 8070
     targetPort: 3000
   type: LoadBalancer
