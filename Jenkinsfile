@@ -4,7 +4,7 @@ pipeline {
         githubPush()
     }
     environment {
-        DOCKER_IMAGE = ""  
+        DOCKER_IMAGE = "swargamsai/tracking-app-doc-img"  
         DOCKER_TAG   = "${BUILD_NUMBER}"
         EKS_CLUSTER_NAME = "tracking-test-cluster"
         AWS_REGION = "ap-south-2"
