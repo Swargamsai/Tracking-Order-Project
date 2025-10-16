@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: fitness-tracker-app
-        image: gani220/mart-app-doc-img
+        image: swargamsai/tracking-app-doc-img
         ports:
         - containerPort: 3000
         env:
