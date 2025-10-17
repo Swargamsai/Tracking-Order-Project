@@ -1,0 +1,13 @@
+region           = "ap-south-2"
+azs              = ["ap-south-2a", "ap-south-2b"]
+vpc_cidr         = "10.0.0.0/16"
+name_prefix      = "track1-dev"
+enable_dns       = true
+enable_public_ip = true
+cluster_name = "track1-app-cluster"
+node_desired_size = 3
+node_min_size = 3
+node_max_size = 5
+instance_type = "t3.medium"
+key_name = "SaiShiva-Ansible-Key"
+ami_id = "ami-027903bb86e4ea454"
