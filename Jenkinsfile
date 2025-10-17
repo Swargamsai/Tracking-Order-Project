@@ -45,7 +45,7 @@ pipeline {
             }
         }
  
-        stage('Deploy  Kubernetes') {
+        stage('Deploy into  Kubernetes') {
             steps {
                 withAWS(credentials: 'AWS_Credentials', region: "${AWS_REGION}") {
                     script {
