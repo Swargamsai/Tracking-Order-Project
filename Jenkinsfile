@@ -6,7 +6,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = "swargamsai/tracking-app-doc-img"  
         DOCKER_TAG   = "${BUILD_NUMBER}"
-        EKS_CLUSTER_NAME = "tracking-test-cluster"
+        EKS_CLUSTER_NAME = "track1-app-cluster"
         AWS_REGION = "ap-south-2"
     }
     stages {
